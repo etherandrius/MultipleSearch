@@ -114,8 +114,7 @@ function! s:MultipleSearchInit()
 	let bgColor = s:Strntok(s:ColorSequence, ',', loopCount + 1)
 	let fgColor = s:Strntok(s:TextColorSequence, ',', loopCount + 1)
         execute 'highlight MultipleSearch' . loopCount
-           \ . ' ctermbg=' . bgColor . ' guibg=' . bgColor
-           \ . ' ctermfg=' . fgColor . ' guifg=' . fgColor
+           \ .  ' guibg=' . bgColor .  ' guifg=' . fgColor
         let loopCount = loopCount + 1
     endwhile
 endfunction
